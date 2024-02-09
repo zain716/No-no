@@ -14,7 +14,7 @@
   "developer": " ",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-   "@yasitha2000/baileys": "latest" , 
+   "@sampandey001/baileys": "latest" , 
     "cors": "^2.8.5",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@sl-code-lords/movie-dl" : "latest" ,
