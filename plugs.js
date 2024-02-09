@@ -7,7 +7,7 @@ const { inputMovie, getMovie, resetMovie } = require("./database/movie_db")
 const { inputus, getus, resetus } = require("./database/user_db")
 const { File } = require('megajs')
 var prefix = '.'
-var uploader = '🎬 DARKYASIYAXTEAM 🎬 ' // edit krgnn
+var uploader = ' ' // edit krgnn
 var tv_cap = `*ᴛᴠ ꜱʜᴏᴡ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ʏᴀsɪʏᴀ ᴏғᴄ* 
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ɪɴᴅᴜᴡᴀʀᴀ*`// edit krgnn
 var mv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ʏᴀsɪʏᴀ ᴏғᴄ*
@@ -889,20 +889,7 @@ reply('*උබට දැන් බොට් වැඩ නෑ වු|කන් �
 break
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
-	 case "menu" :
-	        await conn.sendMessage(from, { react: {  text: "📂", key: msg.key } } )
-		await conn.sendMessage(from, { text : `*🖥️ DARKYASIYAXTEAM MOVIE DL BOT 🖥️*\n\n\n*🔮 Command - mv*\n_🏆 Description - To Download Movie_\n📱 Usage - ${prefix}mv [ movie name ]\n\n*🔮 Command - tvshow*\n_🏆 Description - To Download Tv Series_\n📱 Usage - ${prefix}tvshow [ tv show name ]\n\n*🔮 Command - alive*\n_🏆 Description- To Check bot Alive_\n📱 Usage - ${prefix}alive\n\n*🔮 Command - system*\n_🏆 Description - To Check bot System information_\n📱 Usage - ${prefix}system\n\n*🔮 Command - ping*\n_🏆 Description - To Check bot speed_\n📱 Usage - ${prefix}ping\n\n*🔮 Command - restart*\n_🏆 Description - To Restart bot_\n📱 Usage - ${prefix}restart\n\n*🔮 Command - addsudo*\n_🏆 Description - To Add bot Moderater_\n📱 Usage - ${prefix}addsudo [ reply to message ]\n\n*🔮 Command - delsudo*\n_🏆 Description  -  To Del bot Moderater_\n📱 Usage - ${prefix}delsudo [ reply to message ]\n\n*🔮 Command - resetdb*\n_🏆 Description - To reset Database_\n📱 Usage - ${prefix}resetdb\n\n*🔮 Command - join*\n_🏆 Description - To Join Whatsapp Group_\n📱 Usage - ${prefix}join [ whatsapp group link ]\n\n*🔮 Command - test*\n_🏆 Description - To Check Link Previwe_\n📱 Usage - ${prefix}test [ url link ]\n\n*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ ʙʏ ᴅᴀʀᴋʏᴀsɪʏᴀxᴛᴇᴀᴍ*` ,contextInfo: {
 
-				externalAdReply: { 
-					title: 'MOVIE DOWNLOADER BOT' ,
-					body: 'DARKYASIYAXTEAM',
-					mediaType: 1,
-					sourceUrl: "https://wa.me/+94743548986?text=Hello_DarkYasiya" ,
-          thumbnailUrl: 'https://telegra.ph/file/9ba67e079b1f5f69cbd4a.jpg',
-					renderLargerThumbnail: true,
-          showAdAttribution: true
-         }} } , { quoted: msg }  )
-		 break
  }
 
 
