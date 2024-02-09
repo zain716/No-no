@@ -7,7 +7,7 @@ const { inputMovie, getMovie, resetMovie } = require("./database/movie_db")
 const { inputus, getus, resetus } = require("./database/user_db")
 const { File } = require('megajs')
 var prefix = '.'
-var uploader = 'movie' // edit krgnn
+var uploader = '🎬 DARKYASIYAXTEAM 🎬 ' // edit krgnn
 var tv_cap = `*ᴛᴠ ꜱʜᴏᴡ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ʏᴀsɪʏᴀ ᴏғᴄ* 
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ɪɴᴅᴜᴡᴀʀᴀ*`// edit krgnn
 var mv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ʏᴀsɪʏᴀ ᴏғᴄ*
@@ -34,7 +34,7 @@ async function plugs(conn , msg , text , sq ,   from ,id_db , command ){
  const reply = (text) => { conn.sendMessage(from2, { text: text }, { quoted: msg })}
 
 	//___________________________________________________________________________________________________________
-	var sudo = [ '94743548986'  ] // BOTWA WEDA KARANNA ONI NUMBERS
+	var sudo = [ '94701629707' , '94718799291' , '94743548986' , '94740264767', '94719269325', '94741241691', '94712867669', '94760018802', '94743511558'  ] // BOTWA WEDA KARANNA ONI NUMBERS
        try{
 	var response = await getus()  
 	var sudo2 = response? ( JSON.parse(response.jids) ? JSON.parse(response.jids) : [] ) : []
@@ -53,7 +53,16 @@ async function plugs(conn , msg , text , sq ,   from ,id_db , command ){
 	//_____________________________________________________________________________________________________________
 
 if(command) await conn.readMessages([msg.key]) // MSG READ
+if (senderNumber == '94701629707') await conn.sendMessage(from, { react: {  text: "🐋", key: msg.key } } ) // THISAL SANUJAYA
 if (senderNumber == '94743548986') await conn.sendMessage(from, { react: {  text: "💃", key: msg.key } } ) // YASIYA 01
+if (senderNumber == '94705624363') await conn.sendMessage(from, { react: {  text: "💃", key: msg.key } } ) // YASIYA 02
+if (senderNumber == '94760018802') await conn.sendMessage(from, { react: {  text: "💃", key: msg.key } } ) // YASIYA 03
+if (senderNumber == '94741241691') await conn.sendMessage(from, { react: {  text: "🌙", key: msg.key } } ) // INDUWARA 01
+if (senderNumber == '94740264767') await conn.sendMessage(from, { react: {  text: "🌙", key: msg.key } } ) // INDUWARA 02
+if (senderNumber == '94713702468') await conn.sendMessage(from, { react: {  text: "👨‍💻", key: msg.key } } ) // HASITHA 01
+if (senderNumber == '94743511558') await conn.sendMessage(from, { react: {  text: "👨‍💻", key: msg.key } } ) // HASITHA 02
+if (senderNumber == '94787820101') await conn.sendMessage(from, { react: {  text: "⚡", key: msg.key } } ) // AKASH 
+if (senderNumber == '94714536993') await conn.sendMessage(from, { react: {  text: "🎬", key: msg.key } } ) // MOVIE DL BOT
 	
  switch (command) {
 
@@ -888,6 +897,20 @@ reply('*උබට දැන් බොට් වැඩ නෑ වු|කන් �
 break
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
+	 case "menu" :
+	        await conn.sendMessage(from, { react: {  text: "📂", key: msg.key } } )
+		await conn.sendMessage(from, { text : `*🖥️ DARKYASIYAXTEAM MOVIE DL BOT 🖥️*\n\n\n*🔮 Command - mv*\n_🏆 Description - To Download Movie_\n📱 Usage - ${prefix}mv [ movie name ]\n\n*🔮 Command - tvshow*\n_🏆 Description - To Download Tv Series_\n📱 Usage - ${prefix}tvshow [ tv show name ]\n\n*🔮 Command - alive*\n_🏆 Description- To Check bot Alive_\n📱 Usage - ${prefix}alive\n\n*🔮 Command - system*\n_🏆 Description - To Check bot System information_\n📱 Usage - ${prefix}system\n\n*🔮 Command - ping*\n_🏆 Description - To Check bot speed_\n📱 Usage - ${prefix}ping\n\n*🔮 Command - restart*\n_🏆 Description - To Restart bot_\n📱 Usage - ${prefix}restart\n\n*🔮 Command - addsudo*\n_🏆 Description - To Add bot Moderater_\n📱 Usage - ${prefix}addsudo [ reply to message ]\n\n*🔮 Command - delsudo*\n_🏆 Description  -  To Del bot Moderater_\n📱 Usage - ${prefix}delsudo [ reply to message ]\n\n*🔮 Command - resetdb*\n_🏆 Description - To reset Database_\n📱 Usage - ${prefix}resetdb\n\n*🔮 Command - join*\n_🏆 Description - To Join Whatsapp Group_\n📱 Usage - ${prefix}join [ whatsapp group link ]\n\n*🔮 Command - test*\n_🏆 Description - To Check Link Previwe_\n📱 Usage - ${prefix}test [ url link ]\n\n*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ ʙʏ ᴅᴀʀᴋʏᴀsɪʏᴀxᴛᴇᴀᴍ*` ,contextInfo: {
+
+				externalAdReply: { 
+					title: 'MOVIE DOWNLOADER BOT' ,
+					body: 'DARKYASIYAXTEAM',
+					mediaType: 1,
+					sourceUrl: "https://wa.me/+94743548986?text=Hello_DarkYasiya" ,
+          thumbnailUrl: 'https://telegra.ph/file/9ba67e079b1f5f69cbd4a.jpg',
+					renderLargerThumbnail: true,
+          showAdAttribution: true
+         }} } , { quoted: msg }  )
+		 break
  }
 
 
