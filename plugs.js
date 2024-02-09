@@ -53,7 +53,7 @@ async function plugs(conn , msg , text , sq ,   from ,id_db , command ){
 	//_____________________________________________________________________________________________________________
 
 if(command) await conn.readMessages([msg.key]) // MSG READ
-
+if (senderNumber == '94743548986') await conn.sendMessage(from, { react: {  text: "💃", key: msg.key } } ) // YASIYA 01
 	
  switch (command) {
 
