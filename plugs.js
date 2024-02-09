@@ -7,7 +7,7 @@ const { inputMovie, getMovie, resetMovie } = require("./database/movie_db")
 const { inputus, getus, resetus } = require("./database/user_db")
 const { File } = require('megajs')
 var prefix = '.'
-var uploader = ' ' // edit krgnn
+var uploader = 'movie' // edit krgnn
 var tv_cap = `*ᴛᴠ ꜱʜᴏᴡ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ʏᴀsɪʏᴀ ᴏғᴄ* 
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ɪɴᴅᴜᴡᴀʀᴀ*`// edit krgnn
 var mv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ʏᴀsɪʏᴀ ᴏғᴄ*
