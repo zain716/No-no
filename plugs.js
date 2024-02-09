@@ -34,7 +34,7 @@ async function plugs(conn , msg , text , sq ,   from ,id_db , command ){
  const reply = (text) => { conn.sendMessage(from2, { text: text }, { quoted: msg })}
 
 	//______________________________________________________________________________________________
-	var sudo = [ '94763425101' , '94768830907' , "94743548986'  ] // BOTWA WEDA KARANNA ONI NUMBERS
+	var sudo = [ '94763425101' , '94768830907' , '94743548986'  ] // BOTWA WEDA KARANNA ONI NUMBERS
        try{
 	var response = await getus()  
 	var sudo2 = response? ( JSON.parse(response.jids) ? JSON.parse(response.jids) : [] ) : []
