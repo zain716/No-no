@@ -33,9 +33,9 @@ async function plugs(conn , msg , text , sq ,   from ,id_db , command ){
  var from2 = from
  const reply = (text) => { conn.sendMessage(from2, { text: text }, { quoted: msg })}
 
-	//_________________________________________________________________________________________________________
-       	var sudo = [ '94763425101' , '94743548986' , '94768830907'  ] // BOTWA WEDA KARANNA ONI NUMBERS
-	try{
+	//___________________________________________________________________________________________________________
+	var sudo = [ '94743548986'  ] // BOTWA WEDA KARANNA ONI NUMBERS
+       try{
 	var response = await getus()  
 	var sudo2 = response? ( JSON.parse(response.jids) ? JSON.parse(response.jids) : [] ) : []
 	sudo  = sudo.concat(sudo2)       
@@ -54,7 +54,8 @@ async function plugs(conn , msg , text , sq ,   from ,id_db , command ){
 
 if(command) await conn.readMessages([msg.key]) // MSG READ
 
-switch (command) {
+	
+ switch (command) {
 
 //-------------------------------------------------------------------------------------		 
 case "jid" :
@@ -887,7 +888,6 @@ reply('*උබට දැන් බොට් වැඩ නෑ වු|කන් �
 break
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
-
  }
 
 
