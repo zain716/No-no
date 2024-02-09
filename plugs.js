@@ -7,11 +7,11 @@ const { inputMovie, getMovie, resetMovie } = require("./database/movie_db")
 const { inputus, getus, resetus } = require("./database/user_db")
 const { File } = require('megajs')
 var prefix = '.'
-var uploader = '🎬 MOVIE-BOT ' // edit krgnn
-var tv_cap = `*ᴛᴠ ꜱʜᴏᴡ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ʏᴀsɪʏᴀ ᴏғᴄ* 
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ɪɴᴅᴜᴡᴀʀᴀ*`// edit krgnn
-var mv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ʏᴀsɪʏᴀ ᴏғᴄ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ɪɴᴅᴜᴡᴀʀᴀ*` // edit krgnn
+var uploader = ' OSKA-MD ' // edit krgnn
+var tv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙy ᴏꜱᴋᴀ ᴏꜰᴄ* 
+*ᴩᴏᴡᴇʀᴇᴅ ʙy ᴍʀ ᴏꜱʜᴀɴ*`// edit krgnn
+var mv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙy ᴏꜱᴋᴀ ᴏꜰᴄ*
+*ᴩᴏᴡᴇʀᴇᴅ ʙy ᴍʀ ᴏꜱʜᴀɴ*` // edit krgnn
 const sleep = async(ms) => {
 	return new Promise(resolve => setTimeout(resolve, ms))
 }
@@ -64,7 +64,7 @@ break
 case "tvshow"  : case "tv"  : case "mv2" :
 try {
   await conn.sendMessage(from, { react: {  text: "📺", key: msg.key } } )
-  if(!text) return reply('```ටීවී ශෝ එකක නමක් දීපන් වු|ත්තෝ 😹🖕🏻❓```')
+  if(!text) return reply('```එන ගමන් බන් ටිකක් හිටපන් 😏❓```')
      var mov1 = await conn.cine.search(text , 'tvshows') 	
      var mov2 = await conn.sinh.search(text , 'tvshows')
      var s_t_1 = ''
@@ -101,7 +101,7 @@ break
 case "movie" : case 'film' : case 'mv' :
 try{
     await conn.sendMessage(from, { react: {  text: "🎥", key: msg.key } } )
-    if(!text) return reply('```මූවී එකේ නම දෙන්නේ ප|කයද ...? 😹🖕🏻❓```')
+    if(!text) return reply('```ෆිල්ම් එකේ නම දීහන් බන්❓```')
      var mov1 = await conn.cine.search(text , 'movies') 	
      var mov2 = await conn.sinh.search(text , 'movies')
      var s_t_1 = ''
@@ -181,7 +181,7 @@ const srh_sendmsg = await conn.sendMessage(from, { text : mtext ,contextInfo: {
 
 				externalAdReply: { 
 					title: mov.result.title,
-					body: 'DARKYASIYAXTEAM MOVIE DL BOT',
+					body: 'CYBER-OSKA MOVIE DL BOT',
 					mediaType: 1,
 					sourceUrl: "" ,
           thumbnailUrl: mov.result.images[0] ,
@@ -632,7 +632,7 @@ for (let i = 0; i < mov.result.cast.length; i++) {
 }			
 	if(!srch_text) { return reply('*Movie Results Not Found ℹ️*\n\n_ඔබගේ ඇතුළත් කිරීමට අදාළව Movie results *sinhalasub.lk* වෙබ් අඩවිය තුළ සොයාගත නොහැක 🧑‍🎨_') }
 				var det = `
-│ *🎞️ ᴛɪᴛʟᴇ :* ${mov.result.title}
+│ *🎬 ɴᴀᴍᴇ :* ${mov.result.title}
     
 │ *📅 ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ :* ${mov.result.release_date}
 
@@ -648,20 +648,20 @@ for (let i = 0; i < mov.result.cast.length; i++) {
 
 │ *🕵️‍♂️ ᴄʜᴀʀᴀᴄᴛᴇʀs :* ${cast}
 
-│ *🔮 ᴄᴀᴛᴀɢᴏʀɪᴇs :* ${mov.result.categories}
+│ *🎭 ᴄᴀᴛᴀɢᴏʀɪᴇs :* ${mov.result.categories}
 
-📽️ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 📽️
+♻️ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ♻️
 
 ▫️ *සිංහල උපැසිරස චිත්‍රපටයට ස්ථීරවම එකතු කර ඇත.*
 ▫️ *මෙම සෑම චිත්‍රපටයක්ම දින 14 ක් ඇතුළත Download කරගැනීමට කාරුණික වන්න.*
 
-📽️ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 📽️
+♻️ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ♻️
 
-*📌 ɢʀᴏᴜᴘ ʟɪɴᴋ :* https://chat.whatsapp.com/Jn7Sdkiq9Da2XrV8qoUIkK   
+*📌 ᴄʜᴀɴᴇʟ ʟɪɴᴋ :* https://whatsapp.com/channel/0029VaJGqS4KLaHqM5FcRQ3H   
 
-*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙʏ ʏᴀsɪʏᴀ ᴏғᴄ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ɪɴᴅᴜᴡᴀʀᴀ*` // MEKA EDIT KARA GANNA
-				const mtext =  `*📽️ MOVIE DOWNLOADER 📽️*
+*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙy ᴏꜱᴋᴀ ᴏꜰᴄ*
+*ᴩᴏᴡᴇʀᴇᴅ ʙy ᴍʀ ᴏꜱʜᴀɴ*` // MEKA EDIT KARA GANNA
+				const mtext =  `*📽️ FILM DOWNLOADER 📽️*
     
 *🎞️ ᴛɪᴛʟᴇ :* ${mov.result.title}  
 *📅 ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ :* ${mov.result.release_date}
@@ -837,13 +837,13 @@ break
 
 	 case "alive" :
 		await conn.sendMessage(from, { react: {  text: "🤖", key: msg.key } } )
-		await conn.sendMessage(from, { text : 'Hey i am alive now 🤖_\n\n```Owner by :``` *Yasiya ofc*\n```Powered by :``` *Mr induwara*\n```Supporter By :``` *Akash & Hasitha*\n```Movie Download Site :``` *sinhalasub.net* & *cinesubz.co*\n' ,contextInfo: {
+		await conn.sendMessage(from, { text : 'Hey i am alive now 🤖_\n\n```Owner by :``` *Oska ofc*\n```Powered by :``` *Mr Oshan*\n```Supporter By :``` *no & no*\n```Movie Download Site :``` *sinhalasub.net* & *cinesubz.co*\n' ,contextInfo: {
 
 				externalAdReply: { 
 					title: 'MOVIE DOWNLOADER BOT' ,
-					body: 'DARKYASIYAXTEAM',
+					body: 'CYBER-OSKA-XTEAM',
 					mediaType: 1,
-					sourceUrl: "https://wa.me/+94743548986?text=Hello_DarkYasiya" ,
+					sourceUrl: "https://wa.me/+94763425101?text=Hello_Cyber-oska" ,
           thumbnailUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5hr0t8IlBT6rTbO_gYzKsxiHRNXDqSD0Qjp_Hi1h-rhPfMUmTU9vzR3qGHgKd7JzyeQ&usqp=CAU',
 					renderLargerThumbnail: false,
           showAdAttribution: true
@@ -855,10 +855,10 @@ break
 var su_j = msg.mentionUser[0] ? msg.mentionUser[0] : from
 var c_ul = await getus()
 var c_json = c_ul ? ( JSON.parse(c_ul.jids) ? JSON.parse(c_ul.jids) : [] ) : []	 
-if (c_json.includes(su_j) ) return reply('උබට දැනටමත් වැඩ වු|කන් නැතුව ඉදපන් 😾🖕🏻')
+if (c_json.includes(su_j) ) return reply('උබට දැනටමත් වැඩ බන් 😾')
 c_json.push(su_j)		 
 await inputus(JSON.stringify(c_json))
-reply('*උබට දැන් බොට් වැඩ වු|කන් නැතුව මූවී දාහන් දැන් 😾🤌*')			 
+reply('*උබට දැන් බොට් වැඩ😾🤌*')			 
 		 }catch(e){
 		reply('error')
 			 console.log(e)
@@ -876,10 +876,10 @@ case "delsudo" : case 'deactive' :
 var su_j = msg.mentionUser[0] ? msg.mentionUser[0] : from
 var c_ul = await getus()
 var c_json = c_ul ? ( JSON.parse(c_ul.jids) ? JSON.parse(c_ul.jids) : [] ) : []	 
-if (!c_json.includes(su_j) ) return reply('උබට දැනටමත් වැඩ නෑ වු|කන් නැතුව ඉදපන් 😾🖕🏻')
+if (!c_json.includes(su_j) ) return reply('උබට දැන් වැඩ නැ 😾')
 var sam = c_ul.jids.replace( su_j , '' )		 
 await inputus(sam)
-reply('*උබට දැන් බොට් වැඩ නෑ වු|කන් නැතුව පලයන් 😾🖕🏻.*')			 
+reply('*උබට දැන් බොට් වැඩ නෑ 😾.*')			 
 		 }catch(e){
 		reply('error')
 			 console.log(e)
