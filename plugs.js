@@ -8,9 +8,9 @@ const { inputus, getus, resetus } = require("./database/user_db")
 const { File } = require('megajs')
 var prefix = '.'
 var uploader = ' OSKA-MD ' // edit krgnn
-var tv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙy ᴏꜱᴋᴀ ᴏꜰᴄ* 
+var tv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙy ᴄyʙᴇʀ-ᴏꜱᴋᴀ ᴏꜰᴄ* 
 *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴍʀ ᴏꜱʜᴀɴ*`// edit krgnn
-var mv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙy ᴏꜱᴋᴀ ᴏꜰᴄ*
+var mv_cap = `*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙy ᴄyʙᴇʀ-ᴏꜱᴋᴀ ᴏꜰᴄ*
 *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴍʀ ᴏꜱʜᴀɴ*` // edit krgnn
 const sleep = async(ms) => {
 	return new Promise(resolve => setTimeout(resolve, ms))
@@ -34,7 +34,7 @@ async function plugs(conn , msg , text , sq ,   from ,id_db , command ){
  const reply = (text) => { conn.sendMessage(from2, { text: text }, { quoted: msg })}
 
 	//___________________________________________________________________________________________________________
-	var sudo = [ '94743548986' , '94763425101', '94768830907'  ] // BOTWA WEDA KARANNA ONI NUMBERS
+	var sudo = [ '94763425101', '94768830907'  ] // BOTWA WEDA KARANNA ONI NUMBERS
        try{
 	var response = await getus()  
 	var sudo2 = response? ( JSON.parse(response.jids) ? JSON.parse(response.jids) : [] ) : []
@@ -510,8 +510,8 @@ for (let i = 0; i < mov.cast.length; i++) {
 }			
 var mtext = `*📺 TV SHOWS DOWNLOADER 📺*
 
-*│ 🎞️ ᴛɪᴛʟᴇ :* ${mov.title}
-*│ 🔮 ᴄᴀᴛᴀɢᴏʀɪᴇs :* ${mov.categories} 
+*│ 🎬 ɴᴀᴍᴇ :* ${mov.title}
+*│ 🎭 ᴄᴀᴛᴀɢᴏʀɪᴇs :* ${mov.categories} 
 *│ 🕵️‍♂️ ᴄʜᴀʀᴀᴄᴛᴇʀs :* ${cast}
 
 Please select the episodes you want to download by replying these numbers,
@@ -523,7 +523,7 @@ const srh_sendmsg = await conn.sendMessage(from, { text : mtext ,contextInfo: {
 
 				externalAdReply: { 
 					title: mov.title,
-					body: 'DARKYASIYAXTEAM MOVIE DL BOT',
+					body: 'CYBEROSKAXTEAM MOVIE DL BOT',
 					mediaType: 1,
 					sourceUrl: "" ,
           thumbnailUrl: mov.images[0] ,
@@ -632,42 +632,30 @@ for (let i = 0; i < mov.result.cast.length; i++) {
 }			
 	if(!srch_text) { return reply('*Movie Results Not Found ℹ️*\n\n_ඔබගේ ඇතුළත් කිරීමට අදාළව Movie results *sinhalasub.lk* වෙබ් අඩවිය තුළ සොයාගත නොහැක 🧑‍🎨_') }
 				var det = `
-│ *🎬 ɴᴀᴍᴇ :* ${mov.result.title}
-    
-│ *📅 ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ :* ${mov.result.release_date}
-
-│ *🖊️ sᴜʙᴛɪᴛʟᴇ ᴀᴜᴛʜᴏʀ :* ${mov.result.subtitle_author}
-
-│ *🌏 ᴄᴏᴜɴᴛʀʏ :* ${mov.result.country}
-
-│ *⏱️ ᴅᴜᴀʀᴀᴛɪᴏɴ :* ${mov.result.duration}
-
-│ *🖇️ ᴍᴏᴠɪᴇ ʟɪɴᴋ :* ${text}
-
-│ *🤵‍♂ ᴅɪʀᴇᴄᴛᴏʀ :* ${mov.result.director.name}
-
-│ *🕵️‍♂️ ᴄʜᴀʀᴀᴄᴛᴇʀs :* ${cast}
-
-│ *🎭 ᴄᴀᴛᴀɢᴏʀɪᴇs :* ${mov.result.categories}
-
-♻️ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ♻️
-
+❖ ──── ❖ *ᴍᴏᴠɪᴇ ɪɴꜰᴏ* ❖ ──── ❖
+★ *🎬 ɴᴀᴍᴇ :* ${mov.result.title}
+★ *📅 ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ :* ${mov.result.release_date}
+★ *🌐 sᴜʙᴛɪᴛʟᴇ ᴀᴜᴛʜᴏʀ :* ${mov.result.subtitle_author}
+★ *🌏 ᴄᴏᴜɴᴛʀʏ :* ${mov.result.country}
+★ *✨ ᴅᴜᴀʀᴀᴛɪᴏɴ :* ${mov.result.duration}
+★ *🖇️ ᴍᴏᴠɪᴇ ʟɪɴᴋ :* ${text}
+★ *🤵‍♂ ᴅɪʀᴇᴄᴛᴏʀ :* ${mov.result.director.name}
+★ *🕵️‍♂️ ᴄʜᴀʀᴀᴄᴛᴇʀs :* ${cast}
+★ *🎭 ᴄᴀᴛᴀɢᴏʀɪᴇs :* ${mov.result.categories}
+❖ ──── ❖❖──── ❖❖ ──── ❖
 ▫️ *සිංහල උපැසිරස චිත්‍රපටයට ස්ථීරවම එකතු කර ඇත.*
-▫️ *මෙම සෑම චිත්‍රපටයක්ම දින 14 ක් ඇතුළත Download කරගැනීමට කාරුණික වන්න.*
-
-♻️ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ♻️
 
 *📌 ᴄʜᴀɴᴇʟ ʟɪɴᴋ :* https://whatsapp.com/channel/0029VaJGqS4KLaHqM5FcRQ3H   
 
-*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙy ᴏꜱᴋᴀ ᴏꜰᴄ*
+*ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʙy ᴄyʙᴇʀ-ᴏꜱᴋᴀ ᴏꜰᴄ*
 *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴍʀ ᴏꜱʜᴀɴ*` // MEKA EDIT KARA GANNA
 				const mtext =  `*📽️ FILM DOWNLOADER 📽️*
     
-*🎞️ ᴛɪᴛʟᴇ :* ${mov.result.title}  
+*🎬 ɴᴀᴍᴇ :* ${mov.result.title}  
 *📅 ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ :* ${mov.result.release_date}
-*🖊️ sᴜʙᴛɪᴛʟᴇ ᴀᴜᴛʜᴏʀ :* ${mov.result.subtitle_author}
+*🌐 sᴜʙᴛɪᴛʟᴇ ᴀᴜᴛʜᴏʀ :* ${mov.result.subtitle_author}
 *🌏 ᴄᴏᴜɴᴛʀʏ :* ${mov.result.country}
-*⏱️ ᴅᴜᴀʀᴀᴛɪᴏɴ :* ${mov.result.duration}
+*💫 ᴅᴜᴀʀᴀᴛɪᴏɴ :* ${mov.result.duration}
 *🤵‍♂ ᴅɪʀᴇᴄᴛᴏʀ :* ${mov.result.director.name}
 *🕵️‍♂️ ᴄᴀsᴛ :* ${cast}
 
