@@ -1,5 +1,5 @@
 const { DataTypes, Sequelize } = require("sequelize");
-var dburl = process.env.DATABASE_URL || ''
+var dburl = process.env.DATABASE_URL || 'postgresql://postgres:Daa5d51e1D--BaE*-f1GfcA-Ec1e25G6@roundhouse.proxy.rlwy.net:14752/railway'
 const DATABASE = dburl ? new Sequelize(dburl, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: false }) : new Sequelize({ dialect: 'sqlite', storage: "./database/session.db", logging: false })
 
 const session = DATABASE.define("session", {
